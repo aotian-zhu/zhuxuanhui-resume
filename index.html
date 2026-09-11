@@ -6,7 +6,7 @@
   <title>朱轩慧 | AI 应用开发简历</title>
   <meta
     name="description"
-    content="朱轩慧的静态简历网站，聚焦 AI 应用开发、大模型应用、RAG 与 Agent 工程实践。"
+    content="朱轩慧的静态简历网站，聚焦 AI 应用开发、LLM 工程化、RAG、LangGraph、Supabase 与全栈敏捷交付实践。"
   />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -29,13 +29,16 @@
           <p class="eyebrow">AI Application Engineer / LLM Application</p>
           <h1>朱轩慧</h1>
           <p class="lead">
-            聚焦 AI 应用开发与大模型落地，具备 Python、PyTorch、FastAPI、
-            RAG、LangChain、LangGraph 等方向的学习与项目实践经验，正在持续向
-            AI 工程化应用方向深入。
+            聚焦 AI 应用开发、LLM 工程化与全栈敏捷交付，具备 Python、FastAPI、
+            RAG、LangChain、LangGraph、Supabase 等项目实践，能够围绕真实业务痛点完成从模型编排、后端服务、前端交互到云端部署上线的闭环落地；熟悉
+            Trae、Cursor、Copilot 等 AI 辅助开发工具驱动 MVP 快速迭代，并具备挪威
+            UiT 全英文交换经历与跨文化技术沟通能力。
           </p>
 
           <div class="hero-actions">
-            <a class="button primary" href="./个人简历.docx">下载简历</a>
+            <a class="button primary" href="./个人简历.pdf">下载 PDF 简历</a>
+            <a class="button secondary" href="./个人简历.docx">下载 Word 简历</a>
+            <a class="button secondary" href="./workbench.html">打开本地执行台</a>
             <a class="button secondary" href="mailto:13201217105@163.com">联系我</a>
           </div>
 
@@ -43,7 +46,7 @@
             <li><span>电话</span><strong>132****7105</strong></li>
             <li><span>邮箱</span><strong>13201217105@163.com</strong></li>
             <li><span>学校</span><strong>山东交通学院</strong></li>
-            <li><span>求职方向</span><strong>AI 应用开发 / 大模型相关岗位</strong></li>
+            <li><span>求职方向</span><strong>AI 应用开发 / LLM 工程化 / 全栈敏捷开发</strong></li>
           </ul>
         </div>
 
@@ -166,12 +169,11 @@
             <p class="stack">
               Python · FastAPI · LangChain · LangGraph · ChromaDB · Redis · Docker
             </p>
-            <p>
-              围绕 PDF、网页与 Markdown 等多源文档构建 RAG 问答链路，完成文档解析、文本切分、向量化入库、语义检索与答案生成等核心模块。
-            </p>
-            <p>
-              结合多轮会话记忆、来源引用与检索结果重排机制，提升复杂问题下的回答相关性与可解释性，并基于 FastAPI 完成接口封装与本地部署。
-            </p>
+            <ul class="project-points">
+              <li>设计混合检索与 Rerank 召回链路，结合向量检索、关键词召回与重排机制抑制长文档噪声和语义漂移，提升复杂问答的相关性与抗幻觉能力。</li>
+              <li>引入 Redis 多轮会话缓存与上下文隔离策略，复用历史记忆并减少重复检索开销，优化高并发场景下的响应速度与对话连续性。</li>
+              <li>封装 FastAPI 服务并完成 Docker 容器化部署，统一开发、测试与交付环境，降低环境差异带来的部署成本和维护复杂度。</li>
+            </ul>
           </article>
 
           <article class="project-card">
@@ -182,12 +184,30 @@
             <p class="stack">
               Python · FastAPI · LangGraph · LangChain · Pydantic · SSE
             </p>
-            <p>
-              基于状态图设计 Planner、Router、Executor 等智能体协作流程，完成任务拆解、节点流转、上下文管理与流式输出机制实现。
+            <ul class="project-points">
+              <li>构建基于 LangGraph State Graph 的 Planner / Router / Executor 协同架构，将任务拆解、路由决策与执行状态解耦，提升复杂任务流的可扩展性与容错性。</li>
+              <li>使用 Pydantic 约束 Agent 间输入输出协议与状态持久化结构，减少多角色协作中的状态污染和结果不确定性，提升链路稳定性。</li>
+              <li>实现基于 SSE 的打字机式流式响应与上下文持久化机制，缩短用户等待感知，并保持长链路任务的连续反馈体验。</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <h3>《新世界庄园：破笼之宴》沉浸式 RPG 交互与数据平台</h3>
+              <span>在线项目</span>
+            </div>
+            <p class="stack">
+              HTML5 · CSS3 · JavaScript · Supabase · Vercel · DNS / 域名工程化
             </p>
-            <p>
-              围绕工具调用、对话状态维护与结果汇总等环节进行工程化实践，能够支撑复杂任务的分步执行与结构化结果生成。
+            <p class="project-link">
+              在线地址：
+              <a href="https://www.xinshijie1945.com/" target="_blank" rel="noreferrer">www.xinshijie1945.com</a>
             </p>
+            <ul class="project-points">
+              <li>基于 Supabase 搭建 Serverless 数据底座，完成云端数据库、鉴权与 RLS 行级安全策略设计，实现交互数据的秒级响应、持久化存储与权限隔离。</li>
+              <li>独立完成前端页面实现与 BaaS 能力接入，围绕沉浸式 RPG 场景快速迭代 MVP，验证从创意原型到在线产品的全栈敏捷交付能力。</li>
+              <li>打通独立域名解析、A/CNAME 配置、HTTPS 证书启用与 Vercel CI/CD 自动化部署链路，形成从 0 到 1 的产品上线闭环经验。</li>
+            </ul>
           </article>
         </div>
       </section>

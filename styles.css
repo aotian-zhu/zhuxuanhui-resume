@@ -262,6 +262,11 @@ h1 {
   margin-top: 10px;
 }
 
+.project-card p + .project-points,
+.project-link + .project-points {
+  margin-top: 12px;
+}
+
 .skill-grid,
 .project-list,
 .two-column {
@@ -315,6 +320,28 @@ h1 {
 .stack {
   font-size: 14px;
   margin-bottom: 12px;
+}
+
+.project-link {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.project-link a {
+  color: #dbe5ff;
+}
+
+.project-points {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-points li {
+  line-height: 1.8;
+}
+
+.project-points li + li {
+  margin-top: 8px;
 }
 
 .two-column {
