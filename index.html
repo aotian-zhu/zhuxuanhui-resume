@@ -29,10 +29,10 @@
           <p class="eyebrow">AI Application Engineer / LLM Application</p>
           <h1>朱轩慧</h1>
           <p class="lead">
-            聚焦 AI 应用开发、LLM 工程化与全栈敏捷交付，具备 Python、FastAPI、
-            RAG、LangChain、LangGraph、Supabase 等项目实践，能够围绕真实业务痛点完成从模型编排、后端服务、前端交互到云端部署上线的闭环落地；熟悉
-            Trae、Cursor、Copilot 等 AI 辅助开发工具驱动 MVP 快速迭代，并具备挪威
-            UiT 全英文交换经历与跨文化技术沟通能力。
+            聚焦 AI 应用开发、LLM 工程化与全栈交付，具备 Python、FastAPI、
+            RAG、LangGraph、Supabase 等项目实践，能独立完成从模型编排、后端服务、
+            前端交互到云端上线的 MVP 落地；熟悉 Trae、Cursor、Copilot 等 AI 工具链，
+            具备 UiT 全英文交换经历与英文技术沟通能力。
           </p>
 
           <div class="hero-actions">
@@ -43,7 +43,7 @@
           </div>
 
           <ul class="quick-facts">
-            <li><span>电话</span><strong>132****7105</strong></li>
+            <li><span>电话</span><strong>13201217105</strong></li>
             <li><span>邮箱</span><strong>13201217105@163.com</strong></li>
             <li><span>学校</span><strong>山东交通学院</strong></li>
             <li><span>求职方向</span><strong>AI 应用开发 / LLM 工程化 / 全栈敏捷开发</strong></li>
@@ -115,26 +115,26 @@
           <article class="skill-card">
             <h3>AI 应用开发</h3>
             <p>
-              熟练使用 Python，掌握 PyTorch 深度学习建模与推理流程，熟悉
-              Transformer、注意力机制、文本向量化、Prompt 设计及 RAG 应用原理。
+              熟练使用 Python，掌握 PyTorch、Transformer、Prompt 设计与 RAG 基础，
+              可完成知识库问答、文本生成与信息抽取场景开发。
             </p>
           </article>
           <article class="skill-card">
             <h3>后端服务化</h3>
             <p>
-              熟悉 FastAPI、Flask、Django 等 Python Web 框架，可完成大模型应用接口封装、会话管理、文档上传解析与服务部署。
+              熟悉 FastAPI、Flask、Django，可完成大模型应用接口封装、会话管理、文档解析与服务部署。
             </p>
           </article>
           <article class="skill-card">
             <h3>数据与存储</h3>
             <p>
-              熟悉 MySQL、Redis、MongoDB 等常用数据组件，了解向量检索与相似度召回的基本流程，能够完成结构化数据建模与检索链路搭建。
+              熟悉 MySQL、Redis、MongoDB，了解向量检索、缓存设计与基础数据建模。
             </p>
           </article>
           <article class="skill-card">
             <h3>工程能力</h3>
             <p>
-              熟悉 Docker、Linux 常用命令与 Git 协作流程，具备基础前端开发能力，能够完成 AI 应用从原型开发到联调部署的闭环实现。
+              熟悉 Docker、Linux、Git，具备基础前端开发能力，可完成 AI 应用原型联调与部署。
             </p>
           </article>
         </div>
@@ -163,21 +163,6 @@
         <div class="project-list">
           <article class="project-card">
             <div class="project-top">
-              <h3>多源文档智能检索与问答平台</h3>
-              <span>项目实践</span>
-            </div>
-            <p class="stack">
-              Python · FastAPI · LangChain · LangGraph · ChromaDB · Redis · Docker
-            </p>
-            <ul class="project-points">
-              <li>设计混合检索与 Rerank 召回链路，结合向量检索、关键词召回与重排机制抑制长文档噪声和语义漂移，提升复杂问答的相关性与抗幻觉能力。</li>
-              <li>引入 Redis 多轮会话缓存与上下文隔离策略，复用历史记忆并减少重复检索开销，优化高并发场景下的响应速度与对话连续性。</li>
-              <li>封装 FastAPI 服务并完成 Docker 容器化部署，统一开发、测试与交付环境，降低环境差异带来的部署成本和维护复杂度。</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
               <h3>基于 LangGraph 的多智能体任务编排系统</h3>
               <span>项目实践</span>
             </div>
@@ -185,9 +170,8 @@
               Python · FastAPI · LangGraph · LangChain · Pydantic · SSE
             </p>
             <ul class="project-points">
-              <li>构建基于 LangGraph State Graph 的 Planner / Router / Executor 协同架构，将任务拆解、路由决策与执行状态解耦，提升复杂任务流的可扩展性与容错性。</li>
-              <li>使用 Pydantic 约束 Agent 间输入输出协议与状态持久化结构，减少多角色协作中的状态污染和结果不确定性，提升链路稳定性。</li>
-              <li>实现基于 SSE 的打字机式流式响应与上下文持久化机制，缩短用户等待感知，并保持长链路任务的连续反馈体验。</li>
+              <li>负责多智能体任务编排与状态管理，构建基于 LangGraph State Graph 的 Planner / Router / Executor 协同架构，并用 Pydantic 约束输入输出，降低复杂任务流的耦合度。</li>
+              <li>实现 SSE 流式响应与上下文持久化机制，让长链路任务能够持续反馈执行进度并保留上下文，为后续扩展工具调用和多步骤工作流提供基础。</li>
             </ul>
           </article>
 
@@ -204,9 +188,8 @@
               <a href="https://www.xinshijie1945.com/" target="_blank" rel="noreferrer">www.xinshijie1945.com</a>
             </p>
             <ul class="project-points">
-              <li>基于 Supabase 搭建 Serverless 数据底座，完成云端数据库、鉴权与 RLS 行级安全策略设计，实现交互数据的秒级响应、持久化存储与权限隔离。</li>
-              <li>独立完成前端页面实现与 BaaS 能力接入，围绕沉浸式 RPG 场景快速迭代 MVP，验证从创意原型到在线产品的全栈敏捷交付能力。</li>
-              <li>打通独立域名解析、A/CNAME 配置、HTTPS 证书启用与 Vercel CI/CD 自动化部署链路，形成从 0 到 1 的产品上线闭环经验。</li>
+              <li>负责在线项目的数据架构与核心交互落地，基于 Supabase 搭建 Serverless 数据底座，完成数据库、鉴权与 RLS 策略设计，实现玩家交互数据持久化与权限隔离。</li>
+              <li>独立完成前端实现、域名解析、HTTPS 与 Vercel CI/CD 部署，打通从开发、联调到上线的交付链路，推动项目从 0 到 1 发布为可访问的在线 MVP。</li>
             </ul>
           </article>
         </div>
@@ -223,8 +206,9 @@
             <h3>新疆兵团勘测设计院股份有限公司</h3>
             <p>数字工程院产品研发中心</p>
             <p class="muted">
-              参与数字招标平台客户端的前后端开发，前端采用无界微前端，后端基于 JeecgBoot；
-              协助赋能平台基础能力建设，参与 Drone CI/CD 流水线配置，顺利完成模块交付并支持平台上线。
+              参与数字招标平台客户端的前后端开发，负责无界微前端页面开发、JeecgBoot 后端模块联调与接口问题排查，推动需求从开发验证进入可用状态；
+              协助赋能平台基础能力建设，参与公共功能模块开发和前后端联调，提升平台基础能力的复用性与交付效率；
+              参与 Drone CI/CD 流水线配置、构建发布与流程验证，减少重复部署操作，支持模块按计划交付并配合平台上线。
             </p>
           </article>
         </div>
